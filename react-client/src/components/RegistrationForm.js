@@ -12,7 +12,9 @@ const RegistrationForm = () => {
     landline: "",
     cellphone: "",
     hasCovidHistory: false,
-    conditions: [],
+    conditions: [
+      /* array of strings */
+    ],
     otherConditions: "",
   });
 
