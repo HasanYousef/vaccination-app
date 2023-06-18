@@ -7,20 +7,39 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
-          <h1>COVID-19 Vaccination Registration</h1>
-        </header>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Registration Form</Link>
-            </li>
-            <li>
-              <Link to="/summary">Summary Page</Link>
-            </li>
-          </ul>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div className="container">
+            <Link to="/" className="navbar-brand">
+              COVID-19 Vaccination Registration
+            </Link>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link to="/" className="nav-link">
+                    Registration Form
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/summary" className="nav-link">
+                    Summary Page
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <main>
+        <main className="container mt-4">
           <Routes>
             <Route path="/" element={<RegistrationForm />} />
             <Route path="/summary" element={<SummaryPage />} />
