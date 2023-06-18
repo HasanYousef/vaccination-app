@@ -1,6 +1,8 @@
-package com.vaccination.api.models;
+package com.vaccination.api.model;
 
-import javax.persistence.*;
+import java.time.LocalDate;
+
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "registrations")
@@ -12,7 +14,7 @@ public class Registration {
 
     private String firstName;
     private String lastName;
-    private String dateOfBirth;
+    private LocalDate dateOfBirth;
     private String address;
     private String city;
     private String zipCode;
@@ -50,11 +52,11 @@ public class Registration {
         this.lastName = lastName;
     }
 
-    public String getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
+    public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 

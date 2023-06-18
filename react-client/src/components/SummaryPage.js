@@ -11,7 +11,10 @@ const SummaryPage = () => {
     // Fetch registration data from the backend API
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/registrations");
+        const response = await axios.get(
+          "http://localhost:8080/api/registrations"
+        );
+        console.log(response);
         setRegistrationData(response.data);
         setFilteredData(response.data);
       } catch (error) {

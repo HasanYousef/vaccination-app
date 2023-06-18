@@ -1,6 +1,6 @@
 package com.vaccination.api.controller;
 
-import com.vaccination.api.models.Registration;
+import com.vaccination.api.model.Registration;
 import com.vaccination.api.repository.RegistrationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

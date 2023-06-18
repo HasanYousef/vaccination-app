@@ -1,8 +1,9 @@
 package com.vaccination.api.repository;
 
-import com.vaccination.api.models.Registration;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.vaccination.api.model.Registration;
 
 import java.time.LocalDate;
 import java.util.List;

@@ -53,7 +53,7 @@ const RegistrationForm = () => {
     try {
       // Send the form data to the server endpoint using Axios
       const response = await axios.post(
-        "http://localhost:3001/submit",
+        "http://localhost:8080/api/registrations",
         formData
       );
       console.log(response.data); // Optional: Handle the server response
